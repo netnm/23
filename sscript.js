@@ -67,3 +67,31 @@ app.delete("/students", async (req, res) => {
 app.listen(5000, () => {
   console.log("Server Running on Port 5000");
 });
+
+
+
+
+
+
+
+
+// docker run -d -p 27017:27017 --name mongodb mongo
+
+// mongodb://admin:password@localhost:27017
+
+// version: '3'
+
+// services:
+//   mongodb:
+//     image: mongo
+//     container_name: mongodb
+//     ports:
+//       - "27017:27017"
+//     environment:
+//       MONGO_INITDB_ROOT_USERNAME: admin
+//       MONGO_INITDB_ROOT_PASSWORD: password
+//     volumes:
+//       - mongo-data:/data/db
+
+// volumes:
+//   mongo-data:
